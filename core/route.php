@@ -17,13 +17,8 @@ class route {
          * 2、获取URL中的控制器和方法
          */
         if (isset($_SERVER['REQUEST_URI']) && $_SERVER['REQUEST_URI'] != '/') {
-            $path = $_SERVER['REQUEST_URI'];
-            var_dump('$_SERVER: ', $_SERVER['REQUEST_URI']);
-            var_dump('trim($path): ', trim($path, '/'));
-            // index/index/id/01/name/dejan/sex/man
-            // [0]/[1] /[2]/[3]/[4] / [5] /[6]/[7]
+            $path = $_SERVER['REQUEST_URI']; // localhost/index.php/user/login => /user/login
             $patharr = explode('/', trim($path, '/'));
-            // p('$patharr: ', $patharr);exit;
 
             if (isset($patharr[0])) {
                 if ($patharr[0] != 'index.php') {
@@ -50,7 +45,6 @@ class route {
                 $this->ctrl = 'index';
                 $this->action = 'index';
             }
-            p('11111', $this->ctrl, $this->action);
         }
     }
 

@@ -1,5 +1,5 @@
 <?php
 
-function p($var) {
-    var_dump($var);
+function p($var, $note = '') {
+    var_dump($var, $note.'----------');
 }
