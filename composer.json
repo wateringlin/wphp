@@ -1,0 +1,21 @@
+{
+    "name": "WPHP",
+    "description": "a php framework for php developer",
+    "type": "framework",
+    "keywords": [
+        "PHP", "PHP Framework", "WPHP"
+    ],
+    "homepage": "",
+    "time": "2018-07-24",
+    "license": "MIT",
+    "authors": [{
+        "name": "wphp",
+        "email": "13537678598@163.com",
+        "homepage": "",
+        "role": "engineer"
+    }],
+    "require": {
+        "PHP": ">=5.3.0",
+        "smarty/smarty": "~3.1"
+    }
+}
