@@ -21,7 +21,9 @@ wphp
 
 ├─log
 
-└─public
+index.php
+
+README.md
 
 
 
